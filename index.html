@@ -10,14 +10,34 @@
     <div class="container">
       <h1>Temperature Converter</h1>
       <form id="temperature-form">
-        <label for="temperature">Temperature:</label>
-        <input type="number" id="temperature" name="temperature" required />
+        <input
+          type="number"
+          id="temperature"
+          name="temperature"
+          required
+          placeholder="Enter the Temperature"
+        />
 
-        <label for="unit">Unit:</label>
-        <input type="radio" id="celsius" name="unit" value="celsius" checked />
-        <label for="celsius">Celsius</label>
-        <input type="radio" id="fahrenheit" name="unit" value="fahrenheit" />
-        <label for="fahrenheit">Fahrenheit</label>
+        <div class="label-container">
+          <label for="unit">Unit:</label>
+          <div class="unit-container">
+            <input
+              type="radio"
+              id="celsius"
+              name="unit"
+              value="celsius"
+              checked
+            />
+            <label for="celsius">Celsius</label>
+            <input
+              type="radio"
+              id="fahrenheit"
+              name="unit"
+              value="fahrenheit"
+            />
+            <label for="fahrenheit">Fahrenheit</label>
+          </div>
+        </div>
 
         <button type="submit">Convert</button>
       </form>
