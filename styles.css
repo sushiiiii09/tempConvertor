@@ -18,27 +18,48 @@ body {
   .container {
     background-color: #ffffff;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 80%; /* Adjust the width as needed */
+    max-width: 400px; /* Set a maximum width for better readability */
   }
   
   form {
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center form content horizontally */
   }
   
-  label {
-    display: inline-block;
+  .label-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Add some spacing */
+  }
+  
+  .label-container label {
     margin-right: 10px;
   }
   
+  #temperature {
+    width: 100%; /* Adjust the width as needed */
+    padding: 8px; /* Add some padding for better appearance */
+    box-sizing: border-box; /* Include padding in width calculation */
+    margin-bottom: 5px;
+  }
+  
+  .unit-container {
+    display: flex;
+    align-items: center;
+  }
   button {
-    padding: 10px 10px;
-    border-radius: 5px;
+    padding: 5px 10px;
     background-color: #007bff;
     color: #fff;
     border: none;
     cursor: pointer;
+    width: 100%;
   }
   
   button:hover {
